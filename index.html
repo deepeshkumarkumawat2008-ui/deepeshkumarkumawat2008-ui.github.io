@@ -1,8 +1,48 @@
 <!DOCTYPE html>
 <html>
-<body style="background:black;color:white;font-family:Arial;padding:50px;text-align:center;">
+<head>
+<title>Abrock Movie</title>
+<style>
+body{ background:black;color:white;font-family:Arial;padding:20px; }
+.header{ text-align:center; padding:30px; background:rgba(255,0,0,0.2); margin-bottom:30px; border-radius:20px; }
+.movies{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; max-width:1200px; margin:auto; }
+.card{ background:rgba(255,255,255,0.1); padding:20px; border-radius:15px; text-align:center; border:2px solid gold; }
+.card:hover{ background:rgba(255,255,255,0.2); transform:scale(1.05); }
+.play-btn{ background:red; color:white; border:none; padding:15px 30px; border-radius:25px; cursor:pointer; font-size:18px; width:100%; margin-top:10px; }
+.play-btn:hover{ background:#ff4444; }
+</style>
+</head>
+<body>
+<div class="header">
 <h1 style="color:gold;font-size:3em;">🎬 ABROCK MOVIE</h1>
-<p style="font-size:24px;">Working Successfully!</p>
-<button onclick="alert('Movie Player Ready!')" style="padding:15px 30px;font-size:20px;background:red;color:white;border:none;border-radius:10px;cursor:pointer;">▶ Play Test Movie</button>
+<p style="font-size:24px;">Premium Movie Collection</p>
+</div>
+
+<div class="movies">
+<div class="card">
+<h3>Avengers</h3>
+<p>Action Movie</p>
+<button class="play-btn" onclick="playMovie('Avengers')">▶ Play Now</button>
+</div>
+
+<div class="card">
+<h3>Hera Pheri</h3>
+<p>Comedy Classic</p>
+<button class="play-btn" onclick="playMovie('Hera Pheri')">▶ Play Now</button>
+</div>
+
+<div class="card">
+<h3>Conjuring</h3>
+<p>Horror</p>
+<button class="play-btn" onclick="playMovie('Conjuring')">▶ Play Now</button>
+</div>
+</div>
+
+<script>
+function playMovie(movie){
+    alert(movie + ' playing! Real YouTube next!');
+    // YouTube embed coming soon!
+}
+</script>
 </body>
 </html>
